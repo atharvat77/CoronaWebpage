@@ -1,0 +1,130 @@
+
+
+ul {
+  list-style-type: none;
+  margin: -15px;
+  padding: -15px;
+  overflow:hidden;
+  background-color: #333;
+}
+
+
+
+li a {
+  float: left;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: rgb(226, 44, 44);
+}
+
+li img 
+{
+    padding-right: 40px;
+    float:right;
+    height: 100px;
+    width: 100px;
+}
+li h1 
+{
+    font-size: 40px;
+    padding-right: 60px;
+    color: lime;
+    float: right;
+    
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1579781403337-de692320718a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) center;
+
+color: #fff;
+overflow-x: hidden;
+padding-bottom: 50px;
+} 
+
+.intro {
+padding: 100px 0px;
+}
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
+}
+
+h1 {
+font-size: 3rem;
+} 
+
+
+
+.timeline ul {
+list-style-type:none;
+padding: 50px 0;
+}
+
+.timeline ul li 
+{
+
+width: 4px;
+margin: 0 auto;
+padding-top:50px;
+background: red;
+
+
+} 
+
+
+
+.timeline ul li div {
+position: relative;
+width: 400px;
+padding: 15px;
+background: #58c573;
+}
+
+
+.timeline ul li:nth-child(odd) div {
+left: 45px;
+transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+left: -439px;
+transform: translate3d(-200px, 0, 0);
+}
+
+
+
+time 
+{
+display: block;
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+
+
+.timeline ul li div 
+{
+visibility: hidden;
+opacity: 0;
+transition: all .5s ease-in-out;
+}
+
+.timeline ul li.in-view div 
+{
+transform: none;
+visibility: visible;
+opacity: 1;
+}
+
